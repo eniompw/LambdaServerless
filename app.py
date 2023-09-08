@@ -12,4 +12,4 @@ def hello():
 
 @app.errorhandler(404)
 def resource_not_found(e):
-    return make_response(error='Not found!'), 404)
+    return make_response('Not found!', 404)
